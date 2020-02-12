@@ -1,2 +1,2 @@
-# simple-djangoa-application
+# simple-django-application
 This is a simple Django Application
