@@ -1,0 +1,20 @@
+{% extends 'app1/base.html' %}
+
+{% block container %}
+
+<form method="POST" action="/register/">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="emailaddress">Email address:</label>
+      <input type="email" class="form-control" id="emailaddress" name="emailaddress" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+
+{% endblock %}
